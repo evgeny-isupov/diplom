@@ -1,14 +1,11 @@
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
+.*
 personal.auto.tfvars
 meta.txt
 /nginx/
 nginx.yml
 test_nginx.yml
-.terraform
 /node/
-
+terraform*
 
 
 
