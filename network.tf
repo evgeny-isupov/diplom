@@ -234,7 +234,7 @@ resource "yandex_vpc_security_group" "public-load-balancer" {
   ingress {
     protocol          = "ANY"
     description       = "Health checks"
-    v4_cidr_blocks    = ["198.18.235.0/24", "198.18.248.0/24"]
+    v4_cidr_blocks    = ["0.0.0.0/0"]
     predefined_target = "loadbalancer_healthchecks"
   }
 
