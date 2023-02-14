@@ -8,7 +8,10 @@
 
 Балансировщик
 ![balancer1](/img/balancer1.png) 
-![balancer](/img/balancer.png) 
+![balancer](/img/balancer.png)   
+
+Security Grups
+![security](/img/security.png) 
 
 Далее с помощью ansible проверяем доступность узлов `ansible all -m ping` 
 ![ping](/img/ping.png)  
