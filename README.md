@@ -4,7 +4,11 @@
 ###  Создание  инфраструктуры
 С помощью Terraform создаётся [инфраструктура](./main.tf) .  
 [Сеть](./network.tf) с четырмя подсетями в трёх зонах доступности. Реализуется [файервол](https://cloud.yandex.ru/docs/vpc/concepts/security-groups) разрешающий  входящий трафик только к определённым портам.  
-![s](/img/subnet.png) 
+![s](/img/subnet.png)  
+
+Балансировщик
+![balancer1](/img/balancer1.png) 
+![balancer](/img/balancer.png) 
 
 Далее с помощью ansible проверяем доступность узлов `ansible all -m ping` 
 ![ping](/img/ping.png)  
