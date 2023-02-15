@@ -20,8 +20,9 @@ Security Grups
 ![out](/img/output.png)   
 
 Далее с помощью плейбуков устанавливается сервисы на соответсвующие ВМ - `ansible-playbook prometheus.yml grafana.yml web-notls.yml node-exporter.yml nginxlog-exporter.yml elastic.yml kibana.yml filebeat.yml`  
-![вм](/img/вм.png) 
 
+![вм](/img/вм.png) 
+ВМ "test" 51.250.38.230 моя машина с проектом
 
 ### Cайт
 Две ВМ vm-nginx-1 и vm-nginx-2 для web-серверов во внутренней сети. Установлен nginx с нашим сайтом. Заходим через bastion по ssh. Отображается запущенные nginx и filebeat 
@@ -31,11 +32,14 @@ Security Grups
 ![сайт](/img/сайт.png)   
 
 ### Мониторинг  
-Проверяем работу Prometheus, сбор метрик  
+Проверяем работу Prometheus ip 10.0.3.3 
+
+Сбор метрик    
 ![prometheus](/img/prometius.png)  
 Проверяем работу сервиса node-exporter  
 ![node](/img/node.png)  
 Переходим к Grafana. Основные метрики с обоих серверов nginx1, nginx2 -  CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes
+Перед этим загрижаем подготовленный дашборд описаный в [json](grafana/dashbrd-full.md) файле
 ![g1](/img/g1.png)   
 ![g2](/img/g2.png)  
 ![g3](/img/g3.png)   
