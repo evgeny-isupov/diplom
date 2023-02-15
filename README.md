@@ -38,8 +38,9 @@ Security Grups
 ![prometheus](/img/prometius.png)  
 Проверяем работу сервиса node-exporter  
 ![node](/img/node.png)  
-Переходим к Grafana. Основные метрики с обоих серверов nginx1, nginx2 -  CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes
-Перед этим загрижаем подготовленный дашборд описаный в [json](grafana/dashbrd-full.md) файле
+Переходим к Grafana. Основные метрики с обоих серверов nginx1, nginx2 -  CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes  
+Перед этим загружаем подготовленный дашборд описаный в [json](grafana/dashbrd-full.md) файле  
+![g1](/img/json.png) 
 ![g1](/img/g1.png)   
 ![g2](/img/g2.png)  
 ![g3](/img/g3.png)   
