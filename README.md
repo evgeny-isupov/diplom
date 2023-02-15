@@ -38,7 +38,8 @@ Security Grups
 ![prometheus](/img/prometius.png)  
 Проверяем работу сервиса node-exporter  
 ![node](/img/node.png)  
-Переходим к Grafana. Основные метрики с обоих серверов nginx1, nginx2 -  CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes  
+Переходим к Grafana. ip 51.250.34.196:3000     
+Основные метрики с обоих серверов nginx1, nginx2 -  CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes  
 Перед этим загружаем подготовленный дашборд описаный в [json](grafana/dashbrd-full.md) файле  
 ![g1](/img/json.png) 
 ![g1](/img/g1.png)   
@@ -51,10 +52,12 @@ Security Grups
 ![tresholds](/img/tresholds3.png)   
 
 ### Логи  
-Проверка ВМ с установленным elasticsearch  
+Проверка ВМ с установленным elasticsearch ip 10.0.3.4 
 ![elastic](/img/elastic.png)  
-
-Добавляем в Kibana индексы kibana1.png
+Заходим в Kibana ip 51.250.37.54:5601    
+login - isupov  
+passw - 12345  
+Добавляем в Kibana индексы 
 ![kibana1](/img/kibana1.png) 
 ![kibana1](/img/kibana2.png) 
 ![kibana1](/img/kibana3.png)   
