@@ -32,13 +32,17 @@ Security Grups
 ![сайт](/images/сайт.png)   
 
 ### Мониторинг  
-Проверяем работу Prometheus ip 10.0.3.3 
-
+Проверяем работу Prometheus ip 10.0.3.3  
+ 
 Сбор метрик    
 ![prometheus](/images/prometius.png)  
 Проверяем работу сервиса node-exporter  
 ![node](/images/node.png)  
-Переходим к Grafana. ip 51.250.34.196:3000     
+
+Переходим к Grafana. ip [51.250.34.196:3000](http://51.250.34.196:3000/d/rYdddlPWk/node-exporter-full?orgId=1&from=now-1h&to=now&refresh=5s)  
+login - isupov  
+passw - 12345  
+
 Основные метрики с обоих серверов nginx1, nginx2 -  CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes  
 Перед этим загружаем подготовленный дашборд описаный в [json](grafana/dashbrd-full.md) файле  
 ![g1](/images/json.png) 
@@ -53,14 +57,15 @@ Security Grups
 
 ### Логи  
 Проверка ВМ с установленным elasticsearch ip 10.0.3.4 
-![elastic](/img/elastic.png)  
-Заходим в Kibana ip 51.250.37.54:5601    
-login - isupov  
-passw - 12345  
+![elastic](/images/elastic.png)  
+Заходим в Kibana ip [51.250.37.54:5601](http://51.250.37.54:5601/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(),filters:!(),index:ff361830-ad44-11ed-b3e3-efd5edde9d3e,interval:auto,query:(language:kuery,query:''),sort:!(!('@timestamp',desc))))    
+ 
 Добавляем в Kibana индексы 
-![kibana1](/images/kibana1.png) 
+![kibana1](/images/kibana1.png)   
+
+логи
 ![kibana1](/images/kibana2.png) 
-![kibana1](/images/kibana3.png)   
+
 
 ### Резервное копирование  
 Создайте snapshot дисков всех ВМ. Ограничьте время жизни snaphot в неделю. Сами snaphot настройте на ежедневное копирование.    
