@@ -28,7 +28,8 @@ Security Grups
 Две ВМ vm-nginx-1 и vm-nginx-2 для web-серверов во внутренней сети. Установлен nginx с нашим сайтом. Заходим через bastion по ssh. Отображается запущенные nginx и filebeat 
 ![ssh](/images/ssh.png)  
 
-Публичный ip [балансировщика](https://cloud.yandex.ru/docs/application-load-balancer/) открывает сайт. Конфигурация плейбука устанавливающий nginx и сайт взята из книги "Запускаем ansible" с небольшими доработками.
+Публичный ip [балансировщика](https://cloud.yandex.ru/docs/application-load-balancer/) открывает сайт. Конфигурация плейбука устанавливающий nginx и сайт взята из книги "Запускаем ansible" с небольшими доработками.  
+[51.250.32.178:80](http://51.250.32.178/)
 ![сайт](/images/сайт.png)   
 
 ### Мониторинг  
